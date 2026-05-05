@@ -175,8 +175,6 @@ if (bgVideo) {
 
   const iframe = bgVideo.querySelector('iframe');
   if (iframe) {
-    setTimeout(() => {
-      iframe.classList.add('ready');
-    }, 1500);
+    iframe.classList.add('ready');
   }
 }
