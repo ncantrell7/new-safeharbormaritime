@@ -183,53 +183,53 @@
             <label for="t-course">Certification Course</label>
             <select id="t-course" name="certification_course">
               <option value="">Select a course</option>
-              <option value="Routine UMS Operations Certification">Routine UMS Operations Certification</option>
-              <option value="Advanced & BVLOS USV Certification">Advanced &amp; BVLOS USV Certification</option>
-              <option value="Advanced & BVLOS UUV Certification">Advanced &amp; BVLOS UUV Certification</option>
+              <option value="routine_ums_operations_cerrtificatrion">Routine UMS Operations Certification</option>
+              <option value="advanced_blvlos_usv_certification">Advanced &amp; BVLOS USV Certification</option>
+              <option value="advanced_bvlos_uuv_certification">Advanced &amp; BVLOS UUV Certification</option>
             </select>
           </div>
           <div class="form-group" style="margin-bottom:1.5rem;">
             <label for="t-location">Training Location Preference</label>
-            <select id="t-location" name="training_location">
+            <select id="t-location" name="training_location_preference">
               <option value="">Select a location</option>
-              <option value="Safe Harbor Maritime facility (San Diego)">Safe Harbor Maritime facility (San Diego)</option>
-              <option value="Our facility / on-site">Our facility / on-site</option>
-              <option value="Open to either">Open to either</option>
+              <option value="safe_harbor_maritime_facility_san_diego">Safe Harbor Maritime facility (San Diego)</option>
+              <option value="our_facility_on_site">Our facility / on-site</option>
+              <option value="open_to_either">Open to either</option>
             </select>
           </div>
           <div class="form-group" style="margin-bottom:1.5rem;">
             <label for="t-experience">Experience Level with Uncrewed Maritime Systems</label>
-            <select id="t-experience" name="ums_experience_level">
+            <select id="t-experience" name="experience_level_with_uncrewed_maritime_systems">
               <option value="">Select experience level</option>
-              <option value="No prior UMS experience">No prior UMS experience</option>
-              <option value="Some familiarity with UMS platforms">Some familiarity with UMS platforms</option>
-              <option value="Experienced operator seeking advanced/BVLOS certification">Experienced operator seeking advanced/BVLOS certification</option>
+              <option value="no_prior_ums_experience">No prior UMS experience</option>
+              <option value="some_familiarity_with_ums_platforms">Some familiarity with UMS platforms</option>
+              <option value="experienced_operator_seeking_advanced_blvos_certification">Experienced operator seeking advanced/BVLOS certification</option>
             </select>
           </div>
           <div class="form-group" style="margin-bottom:1.5rem;">
             <label for="t-teamsize">Team Size</label>
-            <select id="t-teamsize" name="training_team_size">
+            <select id="t-teamsize" name="team_size">
               <option value="">Select team size</option>
-              <option value="Individual">Individual</option>
-              <option value="2–5">2–5</option>
-              <option value="6–10">6–10</option>
-              <option value="11–20">11–20</option>
-              <option value="20+">20+</option>
+              <option value="individual">Individual</option>
+              <option value="2_5">2–5</option>
+              <option value="6_10">6–10</option>
+              <option value="11_20">11–20</option>
+              <option value="20_plus">20+</option>
             </select>
           </div>
           <div class="form-group" style="margin-bottom:1.5rem;">
             <label for="t-timeline">Preferred Training Timeline</label>
-            <select id="t-timeline" name="training_timeline">
+            <select id="t-timeline" name="perferred_training_timeline">
               <option value="">Select a timeline</option>
-              <option value="Within 30 Days">Within 30 Days</option>
-              <option value="1–3 Months">1–3 Months</option>
-              <option value="3–6 Months">3–6 Months</option>
-              <option value="Flexible / TBD">Flexible / TBD</option>
+              <option value="within_30_days">Within 30 Days</option>
+              <option value="1_3_months">1–3 Months</option>
+              <option value="3_6_months">3–6 Months</option>
+              <option value="flexible_tbd">Flexible / TBD</option>
             </select>
           </div>
           <div class="form-group" style="margin-bottom:2rem;">
             <label for="t-message">Additional Details or Requirements</label>
-            <textarea id="t-message" name="message" placeholder="Tell us about your training requirements..." rows="6"></textarea>
+            <textarea id="t-message" name="additional_details_or_requirements" placeholder="Tell us about your training requirements..." rows="6"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -361,18 +361,18 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           fields: [
-            { name: 'firstname',            value: form.querySelector('[name="firstname"]').value },
-            { name: 'lastname',             value: form.querySelector('[name="lastname"]').value },
-            { name: 'email',                value: form.querySelector('[name="email"]').value },
-            { name: 'phone',                value: form.querySelector('[name="phone"]').value },
-            { name: 'company',              value: form.querySelector('[name="company"]').value },
-            { name: 'jobtitle',             value: form.querySelector('[name="jobtitle"]').value },
-            { name: 'certification_course', value: form.querySelector('[name="certification_course"]').value },
-            { name: 'training_location',    value: form.querySelector('[name="training_location"]').value },
-            { name: 'ums_experience_level', value: form.querySelector('[name="ums_experience_level"]').value },
-            { name: 'training_team_size',   value: form.querySelector('[name="training_team_size"]').value },
-            { name: 'training_timeline',    value: form.querySelector('[name="training_timeline"]').value },
-            { name: 'message',              value: form.querySelector('[name="message"]').value }
+            { name: 'firstname',                                    value: form.querySelector('[name="firstname"]').value },
+            { name: 'lastname',                                     value: form.querySelector('[name="lastname"]').value },
+            { name: 'email',                                        value: form.querySelector('[name="email"]').value },
+            { name: 'phone',                                        value: form.querySelector('[name="phone"]').value },
+            { name: 'name',                                         value: form.querySelector('[name="company"]').value },
+            { name: 'jobtitle',                                     value: form.querySelector('[name="jobtitle"]').value },
+            { name: 'certification_course',                         value: form.querySelector('[name="certification_course"]').value },
+            { name: 'training_location_preference',                 value: form.querySelector('[name="training_location_preference"]').value },
+            { name: 'experience_level_with_uncrewed_maritime_systems', value: form.querySelector('[name="experience_level_with_uncrewed_maritime_systems"]').value },
+            { name: 'team_size',                                    value: form.querySelector('[name="team_size"]').value },
+            { name: 'perferred_training_timeline',                  value: form.querySelector('[name="perferred_training_timeline"]').value },
+            { name: 'additional_details_or_requirements',           value: form.querySelector('[name="additional_details_or_requirements"]').value }
           ]
         })
       });
