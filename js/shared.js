@@ -166,3 +166,10 @@ filterBtns.forEach(btn => {
     });
   });
 });
+// ---- YouTube iframe flash fix ----
+const videoIframe = document.querySelector('.hero__bg-video iframe');
+if (videoIframe) {
+  setTimeout(() => {
+    videoIframe.classList.add('ready');
+  }, 1500);
+}

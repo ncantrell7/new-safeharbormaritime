@@ -307,6 +307,11 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   min-height: 56.25vw;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.hero__bg-video iframe.ready {
+  opacity: 1;
 }
 .hero__overlay {
   position: absolute;
