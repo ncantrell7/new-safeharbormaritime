@@ -166,15 +166,3 @@ filterBtns.forEach(btn => {
     });
   });
 });
-// ---- YouTube iframe cover ----
-const bgVideo = document.querySelector('.hero__bg-video');
-if (bgVideo) {
-  const cover = document.createElement('div');
-  cover.style.cssText = 'position:absolute;inset:0;z-index:2;pointer-events:none;';
-  bgVideo.appendChild(cover);
-
-  const iframe = bgVideo.querySelector('iframe');
-  if (iframe) {
-    iframe.classList.add('ready');
-  }
-}

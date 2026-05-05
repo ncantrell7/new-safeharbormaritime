@@ -298,7 +298,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   z-index: 0;
   overflow: hidden;
 }
-.hero__bg-video iframe {
+.hero__bg-video video {
   position: absolute;
   top: 50%; left: 50%;
   width: 100vw;
@@ -306,12 +306,8 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   min-width: 177.77vh;
   min-height: 56.25vw;
   transform: translate(-50%, -50%);
+  object-fit: cover;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.hero__bg-video iframe.ready {
-  opacity: 1;
 }
 .hero__overlay {
   position: absolute;
