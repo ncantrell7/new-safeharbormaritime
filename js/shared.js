@@ -166,10 +166,17 @@ filterBtns.forEach(btn => {
     });
   });
 });
-// ---- YouTube iframe flash fix ----
-const videoIframe = document.querySelector('.hero__bg-video iframe');
-if (videoIframe) {
-  setTimeout(() => {
-    videoIframe.classList.add('ready');
-  }, 1500);
+// ---- YouTube iframe cover ----
+const bgVideo = document.querySelector('.hero__bg-video');
+if (bgVideo) {
+  const cover = document.createElement('div');
+  cover.style.cssText = 'position:absolute;inset:0;z-index:2;pointer-events:none;';
+  bgVideo.appendChild(cover);
+
+  const iframe = bgVideo.querySelector('iframe');
+  if (iframe) {
+    setTimeout(() => {
+      iframe.classList.add('ready');
+    }, 1500);
+  }
 }
