@@ -175,7 +175,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 .nav__item { position: relative; }
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + 0.25rem);
+  top: calc(100% + 0rem);
   left: 0;
   min-width: 15rem;
   background: rgba(10,22,40,0.97);
