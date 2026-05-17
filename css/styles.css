@@ -405,6 +405,10 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   border-bottom: 1px solid var(--border);
   overflow: hidden;
 }
+.marquee-item--lg {
+  width: 18rem;
+}
+
 .marquee-section p {
   text-align: center;
   font-size: .85rem;
