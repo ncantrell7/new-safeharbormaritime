@@ -6,37 +6,37 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/about.html</loc>
+    <loc>https://sharbormaritime.com/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/solutions.html</loc>
+    <loc>https://sharbormaritime.com/solutions/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/training.html</loc>
+    <loc>https://sharbormaritime.com/training/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/mission-support.html</loc>
+    <loc>https://sharbormaritime.com/mission-support/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/careers.html</loc>
+    <loc>https://sharbormaritime.com/careers/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/newsroom.html</loc>
+    <loc>https://sharbormaritime.com/newsroom/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sharbormaritime.com/contact.html</loc>
+    <loc>https://sharbormaritime.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
