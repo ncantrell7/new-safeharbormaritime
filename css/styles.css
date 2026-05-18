@@ -406,7 +406,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   overflow: hidden;
 }
 .marquee-item--lg {
-  width: 18rem;
+  transform: scale(1.3);
 }
 
 .marquee-section p {
@@ -420,10 +420,14 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 }
 .marquee-track {
   display: flex;
+  flex-direction: row;
   gap: 3rem;
   width: max-content;
-  animation: marquee 40s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
+
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .marquee-item {
   flex-shrink: 0;

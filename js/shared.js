@@ -166,3 +166,22 @@ filterBtns.forEach(btn => {
     });
   });
 });
+
+// ---- Marquee ----
+const track = document.querySelector('.marquee-track');
+if (track) {
+  let x = 0;
+  const speed = 0.5; // px per frame, adjust to taste
+  const halfWidth = track.scrollWidth / 2;
+
+  track.style.animation = 'none';
+  track.style.transform = `translateX(0)`;
+
+  function tick() {
+    x -= speed;
+    if (Math.abs(x) >= halfWidth) x = 0;
+    track.style.transform = `translateX(${x}px)`;
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
